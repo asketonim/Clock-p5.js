@@ -1,0 +1,21 @@
+body {
+  background-color: black;
+}
+
+p {
+  color: #80ac7b;
+  position: absolute;
+  margin-left: 700px;
+  margin-top: 340px;
+  font-size: 40px;
+  font:  "Fira Sans", sans-serif;
+
+}
+
+p:hover {
+  color: #ffc2e9;
+}
+
+.canvas {
+  position: absolute;
+}
