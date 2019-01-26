@@ -30,9 +30,9 @@ function draw() {
 
   // hours
   if (h >= 12) h -= 12;
-  rotate(h * 30);
+  rotate(h * 30 + (30 * (m/60)));
   line(0,0, 0, -90);
-  rotate(-h * 30);
+  rotate(-h * 30 - (30 * (m/60)));
 
   stroke(100, 0, 200);
   point(0, 0);
