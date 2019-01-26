@@ -5,7 +5,7 @@ function setup() {
 
 
 function draw() {
-  translate(300, 370);
+  translate(700, 370);
   background(0);
   s = second();
   m = minute();
@@ -13,19 +13,27 @@ function draw() {
 
 
   angleMode(DEGREES);
+
+  // seconds
   stroke("#c8e4fe");
   strokeWeight(8);
   rotate(s*6);
   line(0,0, 0, -130);
   rotate(-s*6);
+
+  // minutes
   stroke("#94d2e6");
   rotate(m*6);
   line(0,0, 0, -120);
   rotate(-m*6);
   stroke("#a5aeff");
-  rotate(h * (360 / 24));
-  line(0,0, 90, 0);
-  rotate(-h * (360 / 24));
+
+  // hours
+  if (h >= 12) h -= 12;
+  rotate(h * 30);
+  line(0,0, 0, -90);
+  rotate(-h * 30);
+
   stroke(100, 0, 200);
   point(0, 0);
   stroke("#7dd8c7");
