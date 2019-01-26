@@ -1,21 +1,7 @@
-body {
-  background-color: black;
+html, body {
+  margin: 0;
+  padding: 0;
 }
-
-p {
-  color: #80ac7b;
-  position: absolute;
-  margin-left: 700px;
-  margin-top: 340px;
-  font-size: 40px;
-  font:  "Fira Sans", sans-serif;
-
-}
-
-p:hover {
-  color: #ffc2e9;
-}
-
-.canvas {
-  position: absolute;
+canvas {
+  display: block;
 }
