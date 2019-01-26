@@ -24,7 +24,7 @@ function draw() {
   rotate(-m*6);
   stroke("#a5aeff");
   rotate(h * (360 / 24));
-  line(0,0, 0, -90);
+  line(0,0, 90, 0);
   rotate(-h * (360 / 24));
   stroke(100, 0, 200);
   point(0, 0);
